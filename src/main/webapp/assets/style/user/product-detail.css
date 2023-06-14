@@ -1,0 +1,307 @@
+.main {
+    color: #252a2b;
+    line-height: 1.45;
+    font-size: 14px;
+    overflow-x: hidden;
+    background: #f7f7f7;
+    position: initial;
+}
+
+.product {
+    color: #6c6d70;
+    line-height: 24px;
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.product-top {
+    margin-bottom: 30px;
+}
+
+.product-top a {
+    margin: 0 5px;
+    font-size: 16px;
+    display: inline-flex;
+    color: #6c6d70;
+}
+
+.product-content-left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.product-content-right {
+    width: 40%;
+    padding-left: 40px;
+    color: black;
+    line-height: 24px;
+    text-align: left;
+}
+
+.product-content-left-big-img {
+    width: 80%;
+    padding-right: 20px;
+}
+
+.product-content-left-big-img img {
+    width: 100%;
+    max-height: 600px;
+    cursor: pointer;
+}
+
+.product-content-left-small-img {
+    width: 20%;
+}
+
+.product-content-left-small-img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.product-content {
+    display: flex;
+    min-height: 610px;
+}
+
+.product-content-right {
+    width: 50%;
+    padding-left: 50px;
+
+}
+
+.product-content-right-product-name h1 {
+    color: #221f20;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.product-content-right-product-name p {
+    color: #6c6d70;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.product-content-right-product-price {
+    color: #221f20;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.product-content-right-product-color {
+    color: #221f20;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.size span {
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid #c3c3c3;
+    margin: 12px 10px 12px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #6c6d70;
+    background: white;
+}
+
+.size span:hover {
+    opacity: 0.8;
+}
+
+.size span:active,
+.quantity-set > .quantity-reduce:active,
+.quantity-set > .quantity-increase:active {
+    border: 1px solid #000;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.quantity > p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.quantity-set {
+    display: flex;
+    width: 105px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.quantity-set > .quantity-reduce,
+.quantity-set > .quantity-increase {
+    width: calc(100% / 3);
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.quantity-set > .quantity-reduce:hover,
+.quantity-set > .quantity-increase:hover {
+    opacity: 0.8;
+}
+
+
+.quantity-set > div > div {
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    background: white;
+}
+
+.quatity-value {
+    width: calc(100% / 3);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.quatity-value > input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+}
+
+.product-content-right-product-button {
+    display: flex;
+}
+
+.product-content-right-product-button button {
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+    transition: all 0.3s ease;
+}
+
+.product-content-right-product-button-mua button {
+    background-color: #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+}
+
+.product-content-right-product-button-mua button a {
+    color: white;
+}
+
+.product-content-right-product-button-mua button:first-child:hover {
+    opacity: 0.8;
+}
+
+.product-content-right-product-button-cart button {
+    cursor: pointer;
+    background-color: #3333;
+    border: 1px solid #333333;
+    margin-right: 36px;
+    border-radius: 2px;
+}
+
+.product-content-right-product-button-cart button a {
+    color: #333333;
+}
+
+.product-content-right-product-button-cart button:hover {
+    opacity: 0.8;
+}
+
+.product-content-right-bottom {
+    margin-top: 10px;
+}
+
+.product-content-right-bottom-content-title {
+    display: flex;
+    border-bottom: 2px solid #dddddd;
+}
+
+.product-content-right-bottom-content-title-item {
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.product-content-right-bottom-content-title-item p {
+    font-size: 18px;
+}
+
+.product-content-right-bottom-content {
+    word-wrap: break-word;
+    font-size: 18px;
+}
+
+.lido li {
+    list-style-type: disc;
+}
+
+
+/*-Product Relate--*/
+.product-related {
+    margin-bottom: 50px;
+    padding: 0 200px;
+}
+
+.product-related-title {
+    margin: 20px 0;
+}
+
+.product-related-title p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #221f20;
+}
+
+.product-conten-related {
+    display: inline-flex;
+}
+
+.product-relate-item {
+
+    width: 20%;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.product-relate-item img {
+    width: 100%;
+}
+
+.product-relate-item h1 {
+    font-size: 14px;
+    color: #221f20;
+    margin-top: 15px;
+}
+
+.product-relate-item p {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+.product-content-right-product-name-danhgia-star {
+    padding-left: 50px;
+}
+
+.product-content-right-product-name-danhgia-star i {
+    color: #EEB256;
+}

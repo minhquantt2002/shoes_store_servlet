@@ -1,0 +1,203 @@
+.wraper {
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.banner-header img {
+    height: 230px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.bgwhite-heading {
+    background-color: white;
+    padding: 8px 20px;
+    margin: 10px 0;
+}
+
+.bgwhite-heading .title {
+    font-size: 26px;
+}
+
+.wrapper-layer-filter {
+    width: 100%;
+}
+
+.layer-filter-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.layer-filter-title .title-filter {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #252a2b;
+    line-height: 1.45;
+    display: inline-block;
+    margin-right: 5px;
+    border-right: solid 1px #ccc;
+    padding-right: 15px;
+}
+
+.layer-filter-title .icon-filter {
+    margin-right: 5px;
+}
+
+.filter-group-block {
+    width: 45%;
+    position: relative;
+}
+
+.filter-group-subtitle {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+
+.filter-group-subtitle .icon-control {
+    font-size: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.filter-group-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+
+.checkbox-list li {
+    position: relative;
+    /* margin: 0 0 8px; */
+    padding: 8px 0 0 25px;
+    display: list-item;
+    align-items: center;
+    color: #252a2b;
+    cursor: pointer;
+}
+
+.checkbox-list li:nth-last-child(1) {
+    padding-bottom: 10px;
+}
+
+.filter-group-block:hover .filter-group-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.filter-group-block:hover .icon-control {
+    transform: rotatex(180deg);
+}
+
+.checkbox-list li:hover input[type=checkbox] {
+    opacity: 1;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+}
+
+.grid__column-2-4 {
+    padding: 8px 6px;
+}
+
+.container-product {
+    margin-top: 30px;
+}
+
+.home-product-item {
+    display: block;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+    transition: transform ease-in 0.1s;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.home-product-item:hover {
+    transform: translateY(-6px);
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
+
+}
+
+.home-product-item__properties {
+    position: relative;
+    margin: 10px 20px 0;
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    background: no-repeat top center / cover;
+    width: 100%;
+    border-top-right-radius: 2px 2px;
+
+}
+
+.home-product-item__name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #313131;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.home-product-item__infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    color: #595959;
+    font-weight: 500;
+}
+
+.home-product-item__quantity {
+    font-size: 12px;
+}
+
+.home-product-item__price {
+    font-size: 15px;
+}
+
+
+/*css phan phan trang may ae sua ho toi nhe*/
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
